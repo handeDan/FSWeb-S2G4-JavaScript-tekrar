@@ -26,6 +26,8 @@ const sayilar = [
   845, 650, 470.6, 464.5, 423.2, 730.8, 923, 239.5, 358.6, 339.1, 507, 667.7,
   867.7,
 ];
+//commit 3
+
 
 /* ÖRNEK GÖREV: KareninAlani fonksiyonunu kullanarak aşağıdakileri uygulayın: 
 	1. Karenin kenar uzunluğunu fonksiyonun tek parametresi olarak alacak 

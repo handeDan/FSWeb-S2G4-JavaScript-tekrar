@@ -50,6 +50,7 @@ console.log(KareninAlani(10));
 	3. Çemberin çevresi hesaplanacaktır (💡 İPUCU: Çemberin çevresi = 2 * pi * yarıçap)
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
+//commit 4
 
 function CemberinCevresi(yaricap) {
   return cevre = 2*pi*yaricap;

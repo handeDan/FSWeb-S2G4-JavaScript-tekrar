@@ -37,6 +37,7 @@ const sayilar = [
 function KareninAlani(kenaruzunlugu) {
   return kenaruzunlugu * kenaruzunlugu;
 }
+//commit 2
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 console.log(KareninAlani(10));
@@ -65,6 +66,9 @@ console.log(CemberinCevresi(5));
 function CemberinAlani(yaricap,pi) {
   return pi * Math.pow(yaricap,2);
 }
+
+//commit 1
+
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 console.log(CemberinAlani(15, pi));

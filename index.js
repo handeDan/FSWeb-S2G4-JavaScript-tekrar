@@ -69,7 +69,7 @@ console.log(CemberinCevresi(5));
 function CemberinAlani(yaricap,pi) {
   return pi * Math.pow(yaricap,2);
 }
-
+////commit 4
 //commit 1
 
 

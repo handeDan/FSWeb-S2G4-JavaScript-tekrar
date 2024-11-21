@@ -41,7 +41,7 @@ function KareninAlani(kenaruzunlugu) {
 console.log(KareninAlani(10));
 //
 function CemberinCevresi(yaricap) {
-  return cevre = 2*pi*yaricap;
+  return 2 * pi * yaricap;
 }
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
@@ -54,21 +54,22 @@ function CemberinAlani(yaricap,pi) {
 ////commit 4
 console.log(CemberinAlani(15, pi));
 // 3a çözümü:
-let enKucuk = 0;
-let enBuyuk = 0;
+let enkucuk = Infinity;
+let enbuyuk = -Infinity;
 
 for(let i = 0; i < sayilar.length; i++) {
-  if(sayilar[i] > enBuyuk) {
-    enBuyuk = sayilar[i];
+  if(sayilar[i] > enbuyuk) {
+    enbuyuk = sayilar[i];
   }
-  if(sayilar[i] < enKucuk) {
-    enKucuk = sayilar[i];
+  if(sayilar[i] < enkucuk) {
+    enkucuk = sayilar[i];
   }
 }
-console.log(enBuyuk, enKucuk);
+console.log(enbuyuk, enkucuk);
 // 3b çözümü:
+let ucetambolunenler = [];
 const uceBolunenler = () => {
-  let ucetambolunenler = [];
+
   sayilar.forEach(sayi => {
     if(sayi % 3 === 0) {
       ucetambolunenler.push(sayi);

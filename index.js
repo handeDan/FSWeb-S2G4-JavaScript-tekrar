@@ -29,11 +29,7 @@ const sayilar = [
 //commit 3
 
 
-/* ÖRNEK GÖREV: KareninAlani fonksiyonunu kullanarak aşağıdakileri uygulayın: 
-	1. Karenin kenar uzunluğunu fonksiyonun tek parametresi olarak alacak 
-	2. Karenin alanını hesaplayacak (💡 İPUCU: karenin alanı = karenin kenar uzunluğunun karesi)
-	3. Hesaplanan alanı döndürecek
-*/
+
 
 //Örneğin çözümü:
 function KareninAlani(kenaruzunlugu) {
@@ -43,55 +39,20 @@ function KareninAlani(kenaruzunlugu) {
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 console.log(KareninAlani(10));
-/* GÖREV 1:  
-- CemberinCevresi fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
-	1. CemberinCevresi fonksiyonu parametre olarak sadece çemberin yarıçapını alacaktır. 
-	2. Global değişken olarak verilmiş pi sayısı fonksiyon içinde kullanılacak (pi sayısı fonksiyonun parametresi olarak alınmayacaktır)
-	3. Çemberin çevresi hesaplanacaktır (💡 İPUCU: Çemberin çevresi = 2 * pi * yarıçap)
-	4. Hesaplanan çemberin çevresi döndürülecektir.
-*/
-//commit 4
-
+//
 function CemberinCevresi(yaricap) {
   return cevre = 2*pi*yaricap;
 }
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 console.log(CemberinCevresi(5));
-/* 	GÖREV-2:  
-- CemberinAlani fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
-	1. Argüman olarak çemberin yarıçapını BİRİNCİ parametre olacak alacaktır. 
-	2. Global değişken olarak verilmiş pi sayısını fonksiyonun İKİNCİ parametresi olacak alacaktır.
-	3. Çemberin alanı hesaplanacaktır (💡 İPUCU: Çemberin alanı = pi * yarıçapın karesi, yarıçapın karesini bulmak için Javascript içinde tanımlı Math kütüphanesini kullanabilirsiniz. Math.pow(yaricap,2))
-	4. Hesaplanan çemberin alanı döndürülecektir.
-*/
+
 
 function CemberinAlani(yaricap,pi) {
   return pi * Math.pow(yaricap,2);
 }
 ////commit 4
-//commit 1
-
-
-/* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 console.log(CemberinAlani(15, pi));
-
-/* 	GÖREV-3:
-	- Sayfanın en üstünde global değişken olarak tanımlanmış bir sayilar dizisi bulunmaktadır. Bu dizi içinde 0 ile 1000 arasında rasgele oluşturulmuş tam sayılar ve ondalıklı sayılar bulunmaktadır. Bu diziyi kullanarak aşağıdakileri uygulayın:
-		+3a. enbuyuk ve enkucuk isminde 2 adet değişken tanımlayın ve sayilar dizisindeki en küçük sayı ile en büyük sayıyı bu değişkenlere atayın. (for döngüsü kullanın)
-		 
-		+3b. `ucetambolunenler` adında bir dizi tanımlayın ve bu diziye sayilar dizisindeki 3'ün tam katı olan sayıları atayın (.forEach metodunu kullanın)
-		
-		3c. `ucetambolunenler` dizisindeki sayıların toplamını .reduce metoduyla bulup, sonucu `ucebolunenlerintoplami` değişkenine yazdırın (.reduce metodunu kullanın)
-		
-		3d. `besyuzdenkucuksayilar` adında bir dizi oluşturarak, sayilar dizisinin içindeki 500'den küçük sayıları bu diziye atayın (.filter metodunu kullanın)
-		
-		3e. besyuzdenkucuksayilar dizisindeki sayıları küçükten büyüğe sıralayıp `siralisayilar` adındaki bir diziye aktarın (.sort metodunu kullanın)
-		
-		3f. `tekraredensayilar` adında bir dizi oluşturun. sayilar dizisi içerisindeki bazı sayılar birden fazla kere yazılmış. sayilar dizisi içerisinde birden fazla kez yazılmış sayıları tespit ederek kaç kere tekrar edildiğini belirten bir string oluşturulup `tekraredensayilar` dizisine aktarılmasını istiyoruz. Örnek string: "{sayı} sayısı {tekrarSayisi} kere tekrar edilmiştir"
-		ÖRNEK: sayilar dizisi içerisinde 45 sayısı 3 kere yazılmış. "45 sayısı 3 tekrar edilmiştir" stringini `tekraredensayilar` dizisine aktaracağız.
-		💡İPUCU: Tekrar edilen sayıları ve kaç kere tekrar edildiğini kaydetmek için bir nesne tanımlamalısınız, bu görevi yapabilmek için en az 2 kere döngü yazmalısınız. Birinci döngüde hangi sayının kaç kere tekrar edildiğini tespit edip, 2. döngüde stringi oluşturup verilen diziye aktarmalısınız.
-/*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 // 3a çözümü:
 let enKucuk = 0;
 let enBuyuk = 0;
@@ -105,7 +66,6 @@ for(let i = 0; i < sayilar.length; i++) {
   }
 }
 console.log(enBuyuk, enKucuk);
-
 // 3b çözümü:
 const uceBolunenler = () => {
   let ucetambolunenler = [];
